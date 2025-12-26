@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govt. H.S.S. Titirgaon - Farewell Party Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+        }
+
+        :root {
+            --gold: #FFD700;
+            --maroon: #8B0000;
+            --navy: #000080;
+            --light-bg: #FFF8E7;
+            --shadow: rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .invitation-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            border: 8px solid var(--gold);
+            position: relative;
+        }
+
+        /* Header Section */
+        .invitation-header {
+            background: linear-gradient(to right, var(--maroon), #B22222);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-decoration {
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .decoration-left {
+            left: 20px;
+            top: 30px;
+            transform: rotate(-15deg);
+        }
+
+        .decoration-right {
+            right: 20px;
+            top: 30px;
+            transform: rotate(15deg);
+        }
+
+        .school-name {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        .school-address {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .invitation-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--gold);
+            text-shadow: 3px 3px 0 var(--maroon);
+            letter-spacing: 2px;
+            margin: 10px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .for-whom {
+            font-size: 1.8rem;
+            font-style: italic;
+            margin-top: 15px;
+            background-color: rgba(255, 215, 0, 0.2);
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Invitation Body */
+        .invitation-body {
+            padding: 40px 30px;
+            background-color: var(--light-bg);
+            position: relative;
+        }
+
+        .invitation-text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .greeting {
+            font-size: 2.2rem;
+            color: var(--maroon);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .main-message {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .highlight {
+            background-color: var(--gold);
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: var(--maroon);
+        }
+
+        /* Event Details */
+        .event-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .detail-box {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 10px 20px var(--shadow);
+            border-top: 5px solid var(--maroon);
+            transition: transform 0.3s ease;
+        }
+
+        .detail-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .detail-icon {
+            font-size: 2.8rem;
+            color: var(--maroon);
+            margin-bottom: 15px;
+        }
+
+        .detail-title {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .detail-info {
+            font-size: 1.6rem;
+            color: var(--navy);
+            font-weight: bold;
+        }
+
+        /* Teasing Section */
+        .teasing-section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 20px var(--shadow);
+            border-left: 8px solid var(--gold);
+        }
+
+        .teasing-title {
+            font-size: 1.8rem;
+            color: var(--maroon);
+            text-align: center;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .teasing-title:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--gold);
+        }
+
+        .teasing-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .teasing-item {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            border: 2px dashed var(--maroon);
+        }
+
+        .teasing-item i {
+            font-size: 2.5rem;
+            color: var(--maroon);
+            margin-bottom: 15px;
+        }
+
+        .teasing-text {
+            font-size: 1.2rem;
+            color: #444;
+            font-style: italic;
+        }
+
+        /* Video Section */
+        .video-section {
+            margin-bottom: 40px;
+        }
+
+        .video-title {
+            font-size: 1.8rem;
+            color: var(--maroon);
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border: 5px solid var(--gold);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        .invitation-footer {
+            background: linear-gradient(to right, var(--navy), #1a1a8a);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .footer-title {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .footer-message {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        .signature {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--gold);
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .note {
+            font-size: 1.1rem;
+            margin-top: 20px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .school-name {
+                font-size: 2.2rem;
+            }
+            
+            .invitation-title {
+                font-size: 2.8rem;
+            }
+            
+            .for-whom {
+                font-size: 1.5rem;
+            }
+            
+            .greeting {
+                font-size: 1.8rem;
+            }
+            
+            .main-message {
+                font-size: 1.3rem;
+            }
+            
+            .event-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-decoration {
+                font-size: 70px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .school-name {
+                font-size: 1.8rem;
+            }
+            
+            .invitation-title {
+                font-size: 2.2rem;
+            }
+            
+            .greeting {
+                font-size: 1.6rem;
+            }
+            
+            .invitation-body {
+                padding: 30px 20px;
+            }
+            
+            .header-decoration {
+                font-size: 50px;
+            }
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .pulse {
+            animation: pulse 3s infinite;
+        }
+
+        /* Interactive Elements */
+        .clickable {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .clickable:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-container">
+        <!-- Header -->
+        <div class="invitation-header">
+            <div class="header-decoration decoration-left">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="header-decoration decoration-right">
+                <i class="fas fa-star"></i>
+            </div>
+            
+            <h1 class="school-name">Govt. H.S.S. Titirgaon</h1>
+            <p class="school-address">Titirgaon, Uttar Pradesh</p>
+            <h2 class="invitation-title">FAREWELL PARTY</h2>
+            <p class="for-whom">Class of 2025 - 12th के महानायकों के लिए!</p>
+        </div>
+        
+        <!-- Body -->
+        <div class="invitation-body">
+            <!-- Invitation Text -->
+            <div class="invitation-text">
+                <h2 class="greeting">प्रिय 12th Class के स्टार्स,</h2>
+                <p class="main-message">
+                    आपने 12 साल की स्कूली ज़िन्दगी पूरी कर ली है! 
+                    <span class="highlight">गृहकार्य भूल जाने</span> से लेकर <span class="highlight">टीचर के सामने मज़ाक उड़ाने</span> तक... 
+                    हर पल यादगार रहा! अब समय आ गया है आपको एक <span class="highlight">यादगार विदाई</span> देने का!
+                </p>
+            </div>
+            
+            <!-- Event Details -->
+            <div class="event-details">
+                <div class="detail-box floating">
+                    <div class="detail-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <div class="detail-title">तारीख</div>
+                    <div class="detail-info">20 जनवरी 2026</div>
+                    <p style="margin-top: 10px; font-size: 1rem; color: #777;">(Exam से पहले वाला दिन!)</p>
+                </div>
+                
+                <div class="detail-box floating" style="animation-delay: 0.5s;">
+                    <div class="detail-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="detail-title">समय</div>
+                    <div class="detail-info">दोपहर 12:00 बजे से</div>
+                    <p style="margin-top: 10px; font-size: 1rem; color: #777;">(इस बार लेट नहीं आना!)</p>
+                </div>
+                
+                <div class="detail-box floating" style="animation-delay: 1s;">
+                    <div class="detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-title">स्थान</div>
+                    <div class="detail-info">Titirgaon हॉस्पिटल के बगल में</div>
+                    <p style="margin-top: 10px; font-size: 1rem; color: #777;">(जहाँ आपने कभी असेंबली टाइम पर नहीं गए!)</p>
+                </div>
+            </div>
+            
+            <!-- Teasing Section -->
+            <div class="teasing-section">
+                <h3 class="teasing-title">याद है जब आप लोग... 🤣</h3>
+                <div class="teasing-content">
+                    <div class="teasing-item clickable">
+                        <i class="fas fa-running"></i>
+                        <p class="teasing-text">"लंच के नाम पर पूरा Titirgaon घूम आते थे"</p>
+                    </div>
+                    
+                    <div class="teasing-item clickable">
+                        <i class="fas fa-book"></i>
+                        <p class="teasing-text">"परीक्षा से एक दिन पहले किताबें खोलते थे!"</p>
+                    </div>
+                    
+                    <div class="teasing-item clickable">
+                        <i class="fas fa-users"></i>
+                        <p class="teasing-text">"ग्रुप प्रोजेक्ट में काम सिर्फ एक ही करता था!"</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Section -->
+            <div class="video-section">
+                <h3 class="video-title">IMPORTANT NOTICE 👇</h3>
+                <p style="text-align: center; margin-bottom: 20px; font-size: 1.2rem; color: #555;">
+                    
+                </p>
+                
+                <div class="video-container pulse">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://firebasestorage.googleapis.com/v0/b/t2upload.appspot.com/o/Videos%2FHELOO%20HAW%20ARE%20KHANA%20KHA%20KE%20JANA%20HO%20Supriya%20Pathak%20Dialogue%20Khichadi%20movie%20Funny%20Court%20Scene%20(1080%20X%201920).mp4?alt=media&token=6f32e39e-8a38-431e-beff-2aee9a59e9ad" 
+                            title="12th Class Farewell Memory Video" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 15px; font-style: italic; color: #777;">
+                    🤭😉
+                </p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="invitation-footer">
+            <h3 class="footer-title">आप सभी का स्वागत है!</h3>
+            <p class="footer-message">
+                यह पार्टी सिर्फ आप 12th class के students के लिए है! 
+                खाना, मज़ाक, यादें, और थोड़ी सी शर्मिन्दगी सब कुछ होगा! 
+                हमारे साथ जुड़कर अपनी स्कूली ज़िन्दगी को एक यादगार अंत दें।
+            </p>
+            
+            <div class="signature">
+                - Govt. H.S.S. Titirgaon परिवार की तरफ से
+            </div>
+            
+            <p class="note">
+                नोट: यदि आप नहीं आए तो हम आपके बारे में और भी मज़ाक बनाएंगे! 😄
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Interactive elements functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click effects to teasing items
+            const teasingItems = document.querySelectorAll('.teasing-item');
+            
+            teasingItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Create fun messages array
+                    const messages = [
+                        "हाँ हाँ! वही बात! 😂",
+                        "आपको याद आ गया ना? 😉",
+                        "पार्टी में और भी यादें ताजा करेंगे!",
+                        "वाह! क्या दिन थे वो!",
+                        "अब कॉलेज में ऐसा नहीं कर पाओगे!"
+                    ];
+                    
+                    // Select random message
+                    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                    
+                    // Create temporary popup
+                    const popup = document.createElement('div');
+                    popup.textContent = randomMessage;
+                    popup.style.cssText = `
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: var(--gold);
+                        color: var(--maroon);
+                        padding: 15px 30px;
+                        border-radius: 10px;
+                        font-weight: bold;
+                        font-size: 1.3rem;
+                        z-index: 1000;
+                        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+                        animation: fadeInOut 2s ease forwards;
+                        text-align: center;
+                        max-width: 80%;
+                    `;
+                    
+                    document.body.appendChild(popup);
+                    
+                    // Remove popup after animation
+                    setTimeout(() => {
+                        document.body.removeChild(popup);
+                    }, 2000);
+                });
+            });
+            
+            // Add floating animation to detail boxes on mouseenter
+            const detailBoxes = document.querySelectorAll('.detail-box');
+            detailBoxes.forEach(box => {
+                box.addEventListener('mouseenter', function() {
+                    this.style.animation = 'float 1.5s ease-in-out';
+                });
+                
+                box.addEventListener('mouseleave', function() {
+                    this.style.animation = '';
+                });
+            });
+            
+            // Add CSS for popup animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes fadeInOut {
+                    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+                    15% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+                    30% { transform: translate(-50%, -50%) scale(1); }
+                    70% { opacity: 1; }
+                    100% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Add a fun effect when clicking on the title
+            const title = document.querySelector('.invitation-title');
+            title.addEventListener('click', function() {
+                this.style.color = this.style.color === 'rgb(255, 215, 0)' ? '#FF6B6B' : '#FFD700';
+            });
+        });
+        
+        // Date update function (for when you want to change the date)
+        function updateEventDate(newDate, newTime, newVenue) {
+            if(newDate) {
+                document.querySelectorAll('.detail-info')[0].textContent = newDate;
+            }
+            if(newTime) {
+                document.querySelectorAll('.detail-info')[1].textContent = newTime;
+            }
+            if(newVenue) {
+                document.querySelectorAll('.detail-info')[2].textContent = newVenue;
+            }
+        }
+        
+        // Example: updateEventDate("30 मार्च 2024", "शाम 6:00 बजे से", "स्कूल ग्राउंड");
+    </script>
+</body>
+</html>
